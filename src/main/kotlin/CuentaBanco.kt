@@ -1,4 +1,4 @@
-class CuentaBanco(val titular: String, private var saldo: Double = 0.0) {
+class CuentaBanco(private val titular: String, private var saldo: Double = 0.0) {
     fun ingresar(cantidad: Int){
         require(cantidad > 0) {"Cantidad no válida"}
         this.saldo += cantidad
