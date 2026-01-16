@@ -14,13 +14,13 @@ class Estudiante(private val nombre: String) {
 fun main(){
     try {
         val estudiante1 = Estudiante("josemi")
-        val estudiante2 = Estudiante("ignacio")
-        val estudiante3 = Estudiante("juanillo")
         estudiante1.nota = 7.0
-        estudiante2.nota = 8.0
-        estudiante3.nota = 9.0
         println(estudiante1)
+        val estudiante2 = Estudiante("ignacio")
+        estudiante2.nota = 11.0
         println(estudiante2)
+        val estudiante3 = Estudiante("juanillo")
+        estudiante3.nota = -1.0
         println(estudiante3)
     }catch (e: Exception){
         println(e.message)
